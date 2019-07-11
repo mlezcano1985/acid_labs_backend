@@ -23,9 +23,4 @@ La información del clima es obtenida de la api [darksky.net](https://darksky.ne
 
 # Comandos disponibles
 - `npm start`: Inicia la api.
-- `npm run test`: Ejecuta las pruebas unitarias.
 - `npm run start-docker`: Inicia los contenedores de node y redis.
-
-# Pruebas unitarias
-Se realizó una prueba unitaria al endpoint expuesto. Se verificó el estado y el json de la respuesta.
-Para ejecutar las pruebas ejecute el comando `npm run test`.
