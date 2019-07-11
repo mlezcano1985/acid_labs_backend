@@ -38,7 +38,11 @@ class WeatherService {
 				let c = await redisService.get(city);
 				if(!c) {
 					const url = `/${lat},${lng}`;
-					const response = await axios.default.get(url);
+					const response = await axios.default.get(url, {
+						params: {
+							'lang': 'es'
+						}
+					});
 					console.log(response);
 					await redisService.set(city, JSON.stringify(response.data));
 					return response.data;
