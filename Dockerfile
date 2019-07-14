@@ -26,5 +26,5 @@ RUN mkdir /home/public/
 RUN ln -s /home/public/ /app/
 # COPY public/ /home/public/
 
-EXPOSE 3000
+EXPOSE 3001
 CMD [ "npm", "start" ]
