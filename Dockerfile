@@ -3,7 +3,9 @@ FROM node
 # Enviroment variables
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
-ENV DB_HOST=redis://db
+
+ARG DB_HOST=redis://db
+ENV DB_HOST=${DB_HOST}
 
 # Create app directory
 RUN mkdir -p /app
